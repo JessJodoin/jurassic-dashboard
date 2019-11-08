@@ -3,3 +3,51 @@ html {
   color: #6feff9;
   font-family: "Ubuntu Mono", monospace;
 }
+
+.label {
+  border-left: 1px dotted #6feff9;
+  border-bottom: 1px dotted #6feff9;
+  text-shadow: 0 1px 16px #6feff9;
+}
+
+.border {
+  border-top: 1px dotted #6feff9;
+}
+
+.border-bar {
+  border-top: 1px dotted #6feff9;
+}
+
+.btn {
+  color: #6feff9;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .border-bar {
+    border-right: 1px dotted #6feff9;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .border {
+    border-top: none;
+  }
+
+  .border-m {
+    border-right: 1px dotted #6feff9;
+  }
+
+  .border-bar,
+  .border-tv {
+    border-top: 1px dotted #6feff9;
+    border-right: none;
+  }
+
+}
