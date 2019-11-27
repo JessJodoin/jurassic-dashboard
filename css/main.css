@@ -7,7 +7,11 @@ html {
 .label {
   border-left: 1px dotted #6feff9;
   border-bottom: 1px dotted #6feff9;
-  text-shadow: 0 1px 16px #6feff9;
+  filter: drop-shadow(.1em .1em .3em #6feff9);
+}
+
+.btn svg {
+  filter: drop-shadow(.1em .1em .3em #6feff9);
 }
 
 .border {
@@ -24,6 +28,28 @@ html {
 
 .btn:hover {
   color: #fff;
+}
+
+.alert-icon {
+  animation: alert-scale .8s linear;
+}
+
+.bar-graph {
+  transform: scaleY(0);
+  transform-origin: 0 750px;
+  animation: bar-grow 1s linear forwards;
+}
+
+@keyframes bar-grow {
+
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
