@@ -14,6 +14,10 @@ html {
   filter: drop-shadow(.1em .1em .3em #6feff9);
 }
 
+#hq {
+  color: #ffd31d;
+}
+
 .border {
   border-top: 1px dotted #6feff9;
 }
@@ -31,7 +35,25 @@ html {
 }
 
 .alert-icon {
-  animation: alert-scale .8s linear;
+  color: #f62e52;
+  opacity: .7;
+  transform: scale(1);
+  transform-origin: 667px 1360px;
+  animation: alert-pulse 1s linear alternate infinite;
+}
+
+@keyframes alert-pulse {
+
+  0% {
+    transform: scale(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
 }
 
 .bar-graph {
@@ -48,6 +70,31 @@ html {
 
   100% {
     transform: scaleY(1);
+  }
+
+}
+
+.tv-flicker {
+  opacity: 1;
+  animation: tv-flicker .5s ease infinite;
+}
+
+@keyframes tv-flicker {
+
+  0% {
+    opacity: .4;
+  }
+
+  33% {
+    opacity: .9;
+  }
+
+  66% {
+    opacity: .3;
+  }
+
+  100% {
+    opacity: .8;
   }
 
 }
